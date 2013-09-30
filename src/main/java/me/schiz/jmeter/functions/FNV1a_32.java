@@ -80,7 +80,7 @@ public class FNV1a_32 extends AbstractFunction {
         synchronized (hasher) {
             resultStr = String.valueOf(hasher.fnv1a_32(value.getBytes()));
         }
-        if(key != null) vars.put(key, value);
+        if(key != null) vars.put(key, resultStr);
         return resultStr;
 
     }
